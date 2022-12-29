@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gatos Aleatorios</title>
+  </head>
+  <body>
+    <h1>Gatos App</h1>
+    <span id="error"></span>
+
+    <section id="randomCats">
+      <h2>Gatos Aleatorios</h2>
+
+      <article>
+        <img id="img1" width="100" alt="Foto gato aleatorio" />
+        <button id="btn1">Guardar Cat en favoritos</button>
+      </article>
+
+      <article>
+        <img id="img2" width="100" alt="Foto gato aleatorio" />
+        <button id="btn2">Guardar Cat en favoritos</button>
+      </article>
+
+      <button onclick="loadRandomCats()" id="recargar">Recargar</button>
+    </section>
+
+    <section id="uploadingCat">
+      <h2>Sube la foto de tu gato</h2>
+
+      <form id="uploadingForm">
+        <input id="file" type="file" name="file" />
+        <button type="button" onclick="uploadCatPhoto()">
+          Subir foto de gato
+        </button>
+      </form>
+    </section>
+
+    <section id="favoriteCats">
+      <h2>Gatos Favoritos</h2>
+
+      <article>
+        <img id="img1" width="100" alt="Foto gato aleatorio" />
+        <button>Sacar el Cat en favoritos</button>
+      </article>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
